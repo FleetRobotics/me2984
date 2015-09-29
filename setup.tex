@@ -1,0 +1,33 @@
+%Author: Jason Ziglar <jpz@vt.edu>
+\documentclass{article} % For LaTeX2e
+\usepackage{times}
+\usepackage{hyperref}
+\usepackage{url}
+\usepackage{graphicx}
+\usepackage{units}
+\ifx\latexmargin\undefined
+\else
+\usepackage[margin=\latexmargin]{geometry}
+\fi
+
+%% Using MMD title variable 'mytitle' instead:
+\title{\mytitle}
+
+%% Using MMD author variable 'myauthor' instead:
+\author{\myauthor}
+
+%\newcommand{\fix}{\marginpar{FIX}}
+%\newcommand{\new}{\marginpar{NEW}}
+
+\begin{document}
+
+\maketitle
+
+\ifx\myabstract\undefined
+\else
+\begin{abstract}
+%% Using MMD abstract variable 'myabstract' instead:
+\myabstract
+\end{abstract}
+
+\fi
