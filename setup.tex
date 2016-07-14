@@ -16,6 +16,17 @@
 \usepackage[margin=\latexmargin]{geometry}
 \fi
 
+\ifx\biblio\undefined
+\else
+\usepackage[
+    backend=biber,
+    natbib=true,
+    sorting=none
+]{biblatex}
+\renewcommand{\bibliography}[1]{\addbibresource{#1.bib}}
+\bibliocommand
+\fi
+
 %% Using MMD title variable 'mytitle' instead:
 \title{\mytitle}
 
