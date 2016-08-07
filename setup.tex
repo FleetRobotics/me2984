@@ -16,7 +16,7 @@
 \usepackage[margin=\latexmargin]{geometry}
 \fi
 
-\ifx\bibliography\undefined
+\ifx\bibliocommand\undefined
 \else
 \usepackage[
     backend=biber,
@@ -33,6 +33,11 @@
 %% Using MMD author variable 'myauthor' instead:
 \author{\myauthor}
 
+\ifx\mydate
+\else
+\date{\mydate}
+\fi
+
 %\newcommand{\fix}{\marginpar{FIX}}
 %\newcommand{\new}{\marginpar{NEW}}
 
@@ -48,7 +53,6 @@
 \ifx\myabstract\undefined
 \else
 \begin{abstract}
-%% Using MMD abstract variable 'myabstract' instead:
 \myabstract
 \end{abstract}
 
