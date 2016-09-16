@@ -10,3 +10,8 @@ This template integrates with the paper system available [here](https://github.c
 latex input: me2984/setup.tex
 latex footer: me2984/footer.tex
 ```
+
+# Template Variables
+
+1. `latex author`, `$AUTHOR` - Author listed on the paper
+2. `latex title`, `$TITLE` - Title of the paper
