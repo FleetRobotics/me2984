@@ -6,13 +6,15 @@
 \usepackage{graphicx}
 \usepackage{units}
 \usepackage{minted}
-\usepackage{listings}
-\usepackage{upquote}
-\usepackage{inconsolata}
+\usepackage{fontspec}
+\usepackage[varqu]{inconsolata}
 \ifx\mymargin\undefined
 \else
 \usepackage[margin=\mymargin]{geometry}
 \fi
+
+\setmonofont[StylisticSet={1,3}]{inconsolata} % shapely l, upright quotes
+\setminted{fontseries=inconsolata}
 
 \ifx\bibliocommand\undefined
 \else
